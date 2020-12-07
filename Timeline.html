@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CROWN Act</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #5f4121;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: #5f4121;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ffc61a;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style> 
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>The CROWN Act </h1>
+  </header>  
+  <div id="demo">
+  <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+	 <li><a href="censorship.html">Censorship</a></li>
+     <li><a href="Timeline.html">Dating Back</a></li>
+     <li><a href="Examples.html">Examples</a></li>
+     <li><a href="Employers.html">Employers</a></li>
+     <li><a href="Form.html">Survey</a></li>
+      <li><a href="SiteMap.html">SiteMap</a></li>
+	</ul> 
+   </nav>
+   <main>   
+   <div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>Early African Civilization</h2>
+      <p>In early African civilisations, hairstyles could indicate a person's family background, tribe and social status.
+      Headdresses and hairstyles indicated status and identities across Africa, including Cameroon (left), Ivory Coast (top) and southern Africa.
+      <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/923B/production/_114253473_77ec37d6-baa6-4601-a0fa-fe9fdf4fcbba.jpg" alt="https://www.bbc.com/news/uk-england-merseyside-31438273" width="460" height="345"/></p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>Slavery and Early Ratification</h2>
+      <p>Slavery ends, but whites look upon black women who style their hair like white women as well-adjusted. “Good” hair becomes a prerequisite for entering certain schools, churches, social groups and business networks.
+	 <img src="HotComb.jpg" title="One of the First Hot Combs"/>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1920's</h2>
+      <p>Marcus Garvey, a black nationalist, urges followers to embrace their natural hair and reclaim an African aesthetic.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1971</h2>
+      <p>Melba Tolliver is fired from the ABC affiliate in New York for wearing an Afro while covering Tricia Nixon’s wedding.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2010</h2>
+      <p>The case revolves around Chastity Jones, an Alabama woman who was offered a job as a customer service representative at a call center in Mobile in 2010. During the interview, Jones wore her hair in short, natural locs and was dressed in a business suit and pumps. An HR manager later told Jones that dreadlocks violated the company’s grooming policy because they “tend to get messy.” She told Jones she couldn’t wear her hair that way at work, and when Jones refused to cut her locs, the job offer was rescinded.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2019-2020</h2>
+      <p>On July 3, 2019, Governor Gavin Newsom signed into law Senate Bill 188 also known as the Creating a Respectful and Open Workplace for Natural Hair (CROWN) Act. More states have followed California's footsteps including Maryland. October 1, 2020 Maryland put in place their version of the CROWN Act.</p>
+    </div>
+  </div>
+</div>
+   </main> 
+   <aside>
+   <iframe src="https://giphy.com/embed/S9tX84HbInereNPtXY" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/CRWNMAG-beyonce-blackisking-crwnmag-S9tX84HbInereNPtXY">Follow the link to GIPHY</a></p>
+	 
+   <img src="AfroPick.jpg" title="The First Afro Pick"/>
+   <img src="Ancient.jpg" title="Egyptian engravings"/>
+    <img src="Ancient2.jpg" title="Acervo Do Metropolitan Museum, NY/>
+
+   </aside>
+   </div> <!-- end of flex container -->
+   <footer>Copyright &copy; Marchelle Hayes 2020
+   </footer>
+</div>
+</body>
+</html>

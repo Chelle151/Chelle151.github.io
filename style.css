@@ -1,0 +1,79 @@
+* { box-sizing: border-box; }
+body {font-family: Verdana, Arial, sans-serif;
+      background-color: #FFFFFF;
+}
+header, h1, #wrapper { margin-top: 0; }
+#wrapper {  background-color: #d9b38c; 
+	        width: 90%;
+			margin: auto;
+            color: #261a0d;
+} 
+h1, h2 { color: #5f4121; }
+header { background-image: url(CrownW.jpg);
+		 width: 100%;
+		 height: 300px;
+         background-repeat: no-repeat;  	
+		 background-size: cover; 
+}
+h1 { text-align: center;
+      font-size: 300%;
+	 padding: 5% 0;
+     text-shadow: 3px 3px 3px #ffc61a;	
+}
+nav, main, aside {  padding: 0 1em; 
+}
+img { width: 100%; 
+      height: auto;
+}
+nav ul { list-style-type: none; 
+         font-size: 1.2em;
+		 padding-left: 0;
+}
+nav {  flex: 1;
+}
+main { flex: 7;
+}
+aside { flex: 2; 
+} 
+
+nav a { text-decoration: none;
+		padding: 15px;
+	    display: block; 
+		background-color: #ffc61a;
+		border-bottom: 1px solid #FFFFFF; }
+		
+nav a:link { color: #5e4121; }
+
+nav a:visited { color: #714e28; }
+
+nav a:hover { color: #996600; }
+
+footer { text-align: center;
+         font-size: 80%;
+		 font-style: italic;
+		 color: #261a0d;
+		 padding: 2.5%;
+}
+#demo { display: flex;
+        flex-direction: row;
+}
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0; }
+		    h1 { font-size: 200%; }
+			#demo { flex-direction: column;
+            }
+		    nav ul { display: flex;
+                     flex-direction: row;
+				     justify-content: center; 
+			}
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em;
+			}
+			
+}		
+@media only screen and (max-width: 768px) {
+         	nav { order: 1;   }
+		   nav ul { flex-wrap: wrap; }
+}
+header, main, nav, footer, figure, figcaption { display: block; }

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CROWN Act</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>The CROWN Act </h1>
+  </header>  
+  <div id="demo">
+  <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+	 <li><a href="censorship.html">Censorship</a></li>
+     <li><a href="Timeline.html">Dating Back</a></li>
+     <li><a href="Examples.html">Examples</a></li>
+     <li><a href="Employers.html">Employers</a></li>
+     <li><a href="Form.html">Survey</a></li>
+      <li><a href="SiteMap.html">SiteMap</a></li>
+	</ul> 
+   </nav>
+   <main>   
+	<h1>Please complete this survey</h1>
+<form name="form" action="survey_data.html" method = "GET">
+
+   <h2>Contact information</h2>
+   <label for="email">Email address:</label>
+   <input type="email" name="Email" id="email" autofocus><br>
+<label for="firstname">First name:</label>
+<input type="text" name="First Name" id="firstname"><br>
+<label for="lastname">Last name:</label>
+<input type="text" name="Last Name" id="lastname"><br>
+  
+   <!-- Geographic Information details-->
+   <h2>Where are filling this form out from</h2>
+   <label for="state">State:</label>
+   <input type="state" name="State" id="state" placeholder="Two characters" maxlength=2 pattern="[A-Za-z]{2}"><br>
+   <label for="zipcode">Zip code:</label>
+   <input type="zipcode" name="Zip Code" id="zipcode" placeholder="Five digits" maxlength=5 pattern="\d{5}"><br>
+  
+   <!-- How did you hear about the Crown Act -->
+   <h2>How did you hear about the Crown Act</h2>
+   <label for="websearch">Web Search:</label>
+   <div><input type="checkbox" class="checkbox" id="autoalign" name="Web Search"></div>
+   <div class="clear"></div>
+  
+   <label for="facebook">Facebook:</label>
+   <div><input type="checkbox" class="checkbox" id="autoalign" name="Facebook"></div>
+   <div class="clear"></div>
+  
+   <label for="twitter">Twitter:</label>
+   <div><input type="checkbox" class="checkbox" id="autoalign" name="Twitter"></div>
+   <div class="clear"></div>
+  
+   <label for="emailmessage">Email message:</label>
+   <div><input type="checkbox" class="checkbox" id="autoalign" name="Email Message"></div>
+   <div class="clear"></div>
+
+<h2>Thank you for taking the time to fill out this survey</h2>
+   <input type="submit" name="Submit" id="button">
+<input type="reset" name="reset" id="reset">
+</form>
+</body>
+</html>
+   </main> 
+  
+   </div> <!-- end of flex container -->
+   <footer>Copyright &copy; Marchelle hayes 2020
+   </footer>
+</div>
+</body>
+</html>
